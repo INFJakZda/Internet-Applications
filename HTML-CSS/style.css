@@ -54,13 +54,9 @@ p {
     text-align: justify;
 }
 
-h1 {
-    color: yellow;
-}
+
 
 /*
-h1 { color: blue }
 h1 { color: green }		ostatnia operacja bedzie widoczna
 */
-
-h1 { color: green }
+h1 { color: blue }

@@ -2,7 +2,7 @@ li {
 	list-style-type: square;
 }
 
-span#dane {
+.dane {
 	font-weight: bold;
 }
 
@@ -54,9 +54,6 @@ p {
     text-align: justify;
 }
 
-
-
-/*
-h1 { color: green }		ostatnia operacja bedzie widoczna
-*/
-h1 { color: blue }
+h1 { 
+    color: blue
+}

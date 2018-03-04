@@ -1,0 +1,66 @@
+li { 
+	list-style-type: square;
+}
+
+span#dane {
+	font-weight: bold;
+}
+
+span#cena {
+    color: red;
+    font-weight: bold
+}
+
+p.wstep {
+    font-style: italic;
+}
+
+td img {
+    border-style: solid;
+    border-color: blue
+}
+
+td img:hover {
+    border-color: red
+}
+
+h1 + h2 {
+    letter-spacing: 5px
+}
+
+td[colspan = "2"] {
+	font-size: small;
+}
+
+p + p {
+	color: grey;
+}
+
+body {
+	background-image: url(kordian.jpg); 
+	background-repeat: repeat-y;
+	background-size: 50px 50px
+}
+
+* {
+    font-family: Tahoma;
+}
+
+body {
+    margin: 5em 10em 5em 10em;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    color: yellow;
+}
+
+/*
+h1 { color: blue }
+h1 { color: green }		ostatnia operacja bedzie widoczna
+*/
+
+h1 { color: green }

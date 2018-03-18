@@ -1,0 +1,14 @@
+exercise*
+Lab*
+.idea
+*.iml
+*.jar
+out/
+document/
+models/
+out*/
+movies/
+*.txt
+Resourses/
+*.map
+*cache

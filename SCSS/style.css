@@ -72,6 +72,42 @@ header {
 
 /* Mobile */
 @media only screen and (max-width: 599px) {
+  .col-m-1 {
+    width: 8.3333333333%; }
+
+  .col-m-2 {
+    width: 16.6666666667%; }
+
+  .col-m-3 {
+    width: 25%; }
+
+  .col-m-4 {
+    width: 33.3333333333%; }
+
+  .col-m-5 {
+    width: 41.6666666667%; }
+
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-7 {
+    width: 58.3333333333%; }
+
+  .col-m-8 {
+    width: 66.6666666667%; }
+
+  .col-m-9 {
+    width: 75%; }
+
+  .col-m-10 {
+    width: 83.3333333333%; }
+
+  .col-m-11 {
+    width: 91.6666666667%; }
+
+  .col-m-12 {
+    width: 100%; }
+
   .menu-bar {
     display: none; }
 
@@ -79,14 +115,114 @@ header {
     display: none; } }
 /* Tablet */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .col-t-1 {
+    width: 8.3333333333%; }
+
+  .col-t-2 {
+    width: 16.6666666667%; }
+
+  .col-t-3 {
+    width: 25%; }
+
+  .col-t-4 {
+    width: 33.3333333333%; }
+
+  .col-t-5 {
+    width: 41.6666666667%; }
+
+  .col-t-6 {
+    width: 50%; }
+
+  .col-t-7 {
+    width: 58.3333333333%; }
+
+  .col-t-8 {
+    width: 66.6666666667%; }
+
+  .col-t-9 {
+    width: 75%; }
+
+  .col-t-10 {
+    width: 83.3333333333%; }
+
+  .col-t-11 {
+    width: 91.6666666667%; }
+
+  .col-t-12 {
+    width: 100%; }
+
   .menu-bar {
     display: none; } }
 /* Desktop */
 @media only screen and (min-width: 1024px) {
+  .col-d-1 {
+    width: 8.3333333333%; }
+
+  .col-d-2 {
+    width: 16.6666666667%; }
+
+  .col-d-3 {
+    width: 25%; }
+
+  .col-d-4 {
+    width: 33.3333333333%; }
+
+  .col-d-5 {
+    width: 41.6666666667%; }
+
+  .col-d-6 {
+    width: 50%; }
+
+  .col-d-7 {
+    width: 58.3333333333%; }
+
+  .col-d-8 {
+    width: 66.6666666667%; }
+
+  .col-d-9 {
+    width: 75%; }
+
+  .col-d-10 {
+    width: 83.3333333333%; }
+
+  .col-d-11 {
+    width: 91.6666666667%; }
+
+  .col-d-12 {
+    width: 100%; }
+
   .menu-image {
     display: none; } }
 main {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  display: inline-block; }
+
+.container {
+  display: block;
+  float: left; }
+  .container .frame {
+    margin: 20px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #E0E0E0;
+    text-align: justify; }
+    .container .frame .header {
+      margin-left: 100%;
+      float: right;
+      display: block;
+      border-style: solid;
+      border-width: 0 0 1px 1px;
+      padding: 20px;
+      margin-bottom: 20px; }
+    .container .frame .content {
+      display: block;
+      margin: 20px; }
+    .container .frame #orange {
+      background-color: rgba(255, 165, 0, 0.5); }
+    .container .frame #blue {
+      background-color: rgba(0, 0, 255, 0.5); }
+    .container .frame #green {
+      background-color: rgba(0, 128, 0, 0.5); }
 
 footer {
   background-color: #E0E0E0;

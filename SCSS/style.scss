@@ -1,0 +1,57 @@
+@import "reset";
+
+$Mobile: "only screen and (max-width: 599px)";
+$Tablet: "only screen and (min-width: 600px) and (max-width: 1023px)";
+$Desktop: "only screen and (min-width: 1024px)";
+
+
+
+body{
+  font-size: 16px;
+  margin: auto;  
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  align-items: center;  
+}
+
+.title {    
+  font-size: 200%;
+  
+  display: inline-block;
+}
+
+.menu {
+  margin-left: auto;
+  display: inline-block;
+  font-size: 150%;
+}
+
+
+/* Mobile */
+@media  #{$Mobile} {
+  
+  .menu-bar {
+    display: none;
+  }
+  
+  .title {
+    display: none;
+  }
+}
+  
+/* Tablet */
+@media #{$Tablet} {
+  .menu-bar {
+    display: none;
+  }
+}
+  
+/* Desktop */
+@media #{$Desktop} {
+  .menu-image {
+    display: none;
+  }    
+}

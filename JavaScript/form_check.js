@@ -22,7 +22,8 @@ function validate(form) {
   var flag = true;
   for(i = 0; i < checkList.length; i++) {
     var tmp = checkList[i];
-    flag = checkString(form.elements["f_" + tmp].value, "Podaj " + tmp);
+    //flag = checkString(form.elements["f_" + tmp].value, "Podaj " + tmp);
+    flag = checkStringAndFocus(form.elements["f_" + tmp], "Podaj " + tmp);
     if(!flag) {
       return false;
     }
@@ -71,3 +72,17 @@ function checkEmail(str) {
     return true;
   }
 }
+
+function checkStringAndFocus(obj, msg) {
+  var str = obj.value;
+  var errorFieldName = "e_" + obj.name.substr(2, obj.name.length);
+  if (isWhiteSpace(str) || isEmpty(str)) {
+    document.getElementById(errorFieldName).innerHTML = msg;
+    obj.focus();
+    return false;
+  }
+  else {
+    return true;
+  }
+ }
+ 

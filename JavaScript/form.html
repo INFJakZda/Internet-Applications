@@ -87,8 +87,14 @@
       <tr>
         <td>Uwagi</td>
         <td>
-          <textarea rows="5" cols="15" name="uwagi"></textarea>
+          <textarea rows="5" cols="15" name="uwagi"
+            onkeyup="cnt(this.form.uwagi, document.getElementById('zostalo'), 150)">
+          </textarea>
         </td>
+      </tr>
+
+      <tr>
+        <td>Pozostało <span id="zostalo">150</span> znaków</td>
       </tr>
 
       <tr>

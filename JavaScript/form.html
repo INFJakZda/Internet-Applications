@@ -14,11 +14,11 @@
       <tr>
         <td>Płeć</td>
         <td>
-          <input name="f_plec" value="f_k" checked type="radio" />kobieta<br />
-          <input name="f_plec" value="f_m" type="radio" />mężczyzna
+          <input name="f_plec" value="f_k" checked type="radio" onclick="showElement('NazwiskoPanienskie')"/>kobieta<br />
+          <input name="f_plec" value="f_m" type="radio" onclick="hideElement('NazwiskoPanienskie')"/>mężczyzna
         </td>
       </tr>
-      <tr><td>N. panieńskie</td><td><input type="text" name="f_nazwisko_p"></td></tr>
+      <tr><td>N. panieńskie</td><td><span id="NazwiskoPanienskie"><input type="text" name="f_nazwisko_p"></span></td></tr>
       <tr><td>E-mail</td><td><input type="text" name="f_email"></td></tr>
       <tr><td>Kod pocztowy</td><td><input type="text" name="f_kod"><span class="err" id="e_kod" /></td></tr>
       <tr><td>Ulica/Osiedle</td><td><input type="text" name="f_ulica"><span class="err" id="e_ulica" /></td></tr>

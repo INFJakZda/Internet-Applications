@@ -11,3 +11,7 @@ span.err {
 .red {
   color: red;
 }
+
+.wrong {
+  border: 1px dotted red;
+}

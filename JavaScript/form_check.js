@@ -22,6 +22,13 @@ function isWhiteSpace(str) {
  }
 
 //**************************//
+function wrong(form) {
+    for(var i in form.elements) {
+        form.elements[i].className = "wrong";
+    }
+}
+
+//**************************//
 function validate(form) {
     var checkList = ["imie", "nazwisko", "ulica", "miasto"];
     var flag = true;
@@ -30,12 +37,15 @@ function validate(form) {
         //flag = checkString(form.elements["f_" + tmp].value, "Podaj " + tmp);
         flag = checkStringAndFocus(form.elements["f_" + tmp], "Podaj " + tmp);
         if(!flag) {
+            wrong(form);
             return false;
         }
     }
 
     flag = checkEmailRegEx(form.elements["f_email"].value)
     if(!flag) {
+        wrong(form);
+        form.elements["f_email"].focus();
         return false;
     }
 
@@ -43,6 +53,7 @@ function validate(form) {
     if(checkZIPCodeRegEx(postCode)) {
         alert("Zly kod pocztowy");
         form.elements["f_kod"].focus();
+        wrong(form);
         return false;
     }
     return true;  
@@ -148,3 +159,24 @@ function showElement(e) {
 function hideElement(e) {
     document.getElementById(e).style.visibility = 'hidden';
 }
+
+//---------------------------------------------------
+alterRows(1, document.getElementsByTagName("tr")[0]);
+//---------------------------------------------------
+
+//**************************//
+function alterRows(i, e) {
+    console.log(e);
+    if (e) {
+        if (i % 2 == 1) {
+            e.setAttribute("style", "background-color: Aqua;");
+        }
+        e = e.nextSibling;
+        while (e && e.nodeType != 1) {
+            e = e.nextSibling;
+        }
+        alterRows(++i, e);
+    }
+}
+
+//alterRows(1, document.getElementsByTagName("tr")[0]);

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" /><title>JavaScript</title>
+</head>
+<body>
+  <form id="dane_osobowe" data-parsley-validate="">
+    <table>
+      <tr>
+        <td>Imię</td>
+        <td>
+          <input type="text" class="form-control" name="fullname" required="">
+        </td>
+      </tr>
+      
+      <tr>
+        <td>E-mail</td>
+        <td>
+          <input type="email" class="form-control" name="email" data-parsley-trigger="change" required="">
+        </td>
+      </tr>
+      
+      <tr>
+        <td>Kod pocztowy</td>
+        <td>
+            <input type="text" class="form-control" name="postcode" pattern="[0-9]{2}-[0-9]{3}" required>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>Miasto</td>
+        <td>
+          <input type="text" class="form-control" name="fullcity" data-parsley-minlength="2" required="">
+        </td>
+      </tr>
+      
+      <tr>        
+        <td colspan="2">
+          <input type="submit" value="Prześlij">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+    $('#dane_osobowe').parsley().on('field:validated', function() {
+      var ok = $('.parsley-error').length === 0;
+    })
+    .on('form:submit', function() {
+      return false; // Don't submit form for this demo
+    });
+  });
+  </script>

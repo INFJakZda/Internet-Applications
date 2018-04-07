@@ -9,8 +9,11 @@
   </script>
   
   <script type="text/javascript">
-    $(document).ready(function () {
-      alert('Czy wiesz, że możesz skopiować ten tekst przy pomocy skrótu Ctrl + C.');
+    $(function () {
+      $('#a').css('color', 'red').append(' doklejone');
+      $('div').css('color', 'green');
+      $('.c').css('font-size', 'x-large');
+      $('tr + tr').css('color', 'aqua');
     });
   </script>
 </head>

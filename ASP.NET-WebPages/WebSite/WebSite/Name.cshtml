@@ -1,5 +1,5 @@
 ﻿@{ 
-    var name = "Robert Paulson";
+    var name = Request["Name"] != "" ? Request["Name"] : "Paul Kowalski";
 }
 <!DOCTYPE html>
 <html>

@@ -1,5 +1,9 @@
 ﻿@{ 
-    var name = Request["Name"] != "" ? Request["Name"] : "Paul Kowalski";
+    var name = Request["Name"];
+    if (name == null || name == "")
+    {
+        name = "Paul Kowalski";
+    }
 }
 <!DOCTYPE html>
 <html>
@@ -8,7 +12,7 @@
     </head>
     <body>
         <ul>
-            @for(var i = 0; i < 10; i++)
+            @for (var i = 0; i < 10; i++)
             {
                 <p>His name is @name</p>
             }

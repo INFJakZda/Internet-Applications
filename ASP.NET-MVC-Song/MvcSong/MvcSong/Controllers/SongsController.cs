@@ -11,17 +11,18 @@ namespace MvcSong.Controllers
         // GET: Songs
         public ActionResult Index()
         {
-            return Content("Hello World!");
+            return View();
         }
-
+        
         public ActionResult Square(int id)
         {
-            return Content((id * id).ToString());
+            return Content((id).ToString());
         }
 
         public ActionResult Square2()
         {
-            return Content((23 * 23).ToString());
+            return Square(23);
+            //return Content((23 * 23).ToString());
         }
     }
 }

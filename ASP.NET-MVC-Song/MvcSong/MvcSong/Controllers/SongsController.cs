@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MvcSong.Models;
 
 namespace MvcSong.Controllers
 {
@@ -11,7 +12,8 @@ namespace MvcSong.Controllers
         // GET: Songs
         public ActionResult Index()
         {
-            return View();
+            Song song = new Song(1, "April", "Jhon", "pop");
+            return View(song);
         }
         
         public ActionResult Square(int id)

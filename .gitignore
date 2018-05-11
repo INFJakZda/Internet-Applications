@@ -5,7 +5,6 @@ Lab*
 *.jar
 out/
 document/
-models/
 out*/
 movies/
 *.txt

@@ -7,11 +7,14 @@ namespace MvcSong.Models
 {
     public class Song
     {
-        int Id;
-        string Name;
-        string Artist;
-        string Genre;
-
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Artist { get; set; }
+        public string Genre { get; set; }
+        public Song()
+        {
+            
+        }
         public Song(int id, string name, string artist, string genre)
         {
             this.Id = id;
